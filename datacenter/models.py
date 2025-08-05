@@ -33,9 +33,11 @@ class Visit(models.Model):
 
 def format_duration(duration):
     total_seconds = int(duration)
-    hours = total_seconds // 3600
-    minutes = (total_seconds % 3600) // 60
-    secs = total_seconds % 60
+    SECONDS_IN_MINUTE = 60
+    SECONDS_IN_HOUR = 3600
+    hours = total_seconds // SECONDS_IN_HOUR
+    minutes = (total_seconds % SECONDS_IN_HOUR) // SECONDS_IN_MINUTE
+    secs = total_seconds % SECONDS_IN_MINUTE
     duration_in_format = f'{hours} ч. {minutes} мин. {secs} с.'
     return duration_in_format
 
@@ -51,4 +53,5 @@ def get_duration(visit):
 
 
 def is_visit_long(visit, minutes=60):
-    return get_duration(visit) >= minutes * 60
+    SECONDS_IN_MINUTE = 60
+    return get_duration(visit) >= minutes * SECONDS_IN_MINUTE
