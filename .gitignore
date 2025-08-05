@@ -134,4 +134,5 @@ Test_all.py
 .idea
 Thumbs.db
 .DS_Store
-
+pyproject.toml
+poetry.lock
