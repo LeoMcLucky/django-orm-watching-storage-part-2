@@ -13,8 +13,12 @@
 
 ### Как установить ###
 
-Для работы с базой данных Вам необходимы права на чтение данных.
-Адрес и пароль к базе данных, а также `SECRET_KEY` сайта.
+Для работы с базой данных Вам необходимы права на чтение данных. Необходимо заполнить конфигурацию подключения к базе данных PostgreSQL в Django. И остальные секретные данные.
+1. [DATABASES](https://docs.djangoproject.com/en/5.2/ref/settings/#databases)
+2. [SECRET_KEY](https://docs.djangoproject.com/en/5.2/ref/settings/#secret-key)
+3. [DEBUG](https://docs.djangoproject.com/en/5.2/ref/settings/#debug)
+4. [ALLOWED_HOSTS](https://docs.djangoproject.com/en/5.2/ref/settings/#allowed-hosts)
+
 После получения прав - необходимо ввести в ручную все данные в файле `settings.py`.
 Или создать локально файл `.env` с требуемыми данными.
 
@@ -35,7 +39,7 @@ pip install -r requirements.txt
 ```
 python manage.py runserver 0.0.0.0:8000
 ```
-5. Переходим на страницу [Пульт охраны](http://127.0.0.1:8000)
+5. Переходим на страницу [Пульт охраны](http://localhost:8000)
 ![Пример №1](<Jul-31-2025 15-42-55.gif>)
 
 ### Цель проекта ###
