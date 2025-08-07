@@ -15,6 +15,11 @@
 
 Для работы с базой данных Вам необходимы права на чтение данных. Необходимо заполнить конфигурацию подключения к базе данных PostgreSQL в Django. И остальные секретные данные.
 1. [DATABASES](https://docs.djangoproject.com/en/5.2/ref/settings/#databases)
+1.1 [HOST](https://docs.djangoproject.com/en/5.2/ref/settings/#host)
+1.2 [PORT](https://docs.djangoproject.com/en/5.2/ref/settings/#port)
+1.3 [NAME](https://docs.djangoproject.com/en/5.2/ref/settings/#name)
+1.4 [USER](https://docs.djangoproject.com/en/5.2/ref/settings/#user)
+1.5 [PASSWORD](https://docs.djangoproject.com/en/5.2/ref/settings/#password)
 2. [SECRET_KEY](https://docs.djangoproject.com/en/5.2/ref/settings/#secret-key)
 3. [DEBUG](https://docs.djangoproject.com/en/5.2/ref/settings/#debug)
 4. [ALLOWED_HOSTS](https://docs.djangoproject.com/en/5.2/ref/settings/#allowed-hosts)
